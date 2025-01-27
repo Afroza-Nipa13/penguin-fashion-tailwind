@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +27,22 @@
 
 <body class="font-roboto">
     <header class="bg-[#FFFBF0] pl-4">
-        <nav></nav>
+        <nav class="flex justify-between py-12 px-12">
+        <div class="w-2/12">
+            <img src="./icons/logo.png" alt="">
+        </div>
+        <div class="sm:invisible lg:visible md:visible">
+            <ul class="flex font-bold text-stone-950 ">
+                <li class="mx-4">Home</li>
+                <li class="mx-4">Product</li>
+                <li class="mx-4">About Us</li>
+                <li class="mx-4">Contact Us</li>
+            </ul>
+        </div>
+         <!-- <div class="sm:visible md:invisible lg:invisible">
+            <i class="fa-solid fa-bars"></i>
+         </div> -->
+        </nav>
         <!-- ...banner.. -->
         <div class="md:flex md:items-center md:justify-around">
             <div>
@@ -176,6 +192,51 @@
                       </div>
                     
                     </div>
+        </section>
+
+        <section class="my-12 mx-auto lg:flex lg:justify-between lg:flex-row sm:flex sm:flex-col-reverse gap-10">
+            <!-- card container  -->
+            <div class="w-full flex flex-col  gap-8">
+                <!-- card-1  -->
+                 <div class="drop-shadow-lg bg-white rounded-xl lg:flex items-center px-8 gap-5">
+                     <div>
+                        <img class="" src="./icons/house.png" alt="">
+                     </div>
+                     <div>
+                        <h3 class="text-sky-950 font-bold">Find the Perfect Fit</h3>
+                        <p class="text-sky-950">Everybody is different, which is why we
+                            offer styles for every body.</p>
+                     </div>
+                 </div>
+                 <!-- card-2  -->
+                 <div class="drop-shadow-lg bg-white rounded-xl lg:flex items-center px-8 gap-5">
+                    <div>
+                       <img class="" src="./icons/box.png" alt="">
+                    </div>
+                    <div>
+                       <h3 class="text-sky-950 font-bold">Find the Perfect Fit</h3>
+                       <p class="text-sky-950">Everybody is different, which is why we
+                           offer styles for every body.</p>
+                    </div>
+                </div>
+                <!-- card-3  -->
+                <div class="drop-shadow-lg bg-white rounded-xl lg:flex items-center px-8 gap-5">
+                    <div>
+                       <img class="" src="./icons/question.png" alt="">
+                    </div>
+                    <div>
+                       <h3 class="text-sky-950 font-bold">Find the Perfect Fit</h3>
+                       <p class="text-sky-950">Everybody is different, which is why we
+                           offer styles for every body.</p>
+                    </div>
+                </div>
+
+
+
+            </div> 
+            <div class="mt-10">
+                <img  src="./images/shopping.png" alt="">
+            </div>           
         </section>
     </main>
     <footer>
